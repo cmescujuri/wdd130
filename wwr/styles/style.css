@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Viga&family=Ysabeau:wght@600&display=swap');
+
 #content {
   max-width: 1600px;
   margin: 0 auto;
@@ -5,10 +7,18 @@
 
 body {
   background-color: #FFFFFF;
+  font-family: "Ysabeau", sans-serif;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-  background-color: #95D3E1;
+  background-color: #4F738D;
+}
+
+#logo_link{
+  padding-top: 5px;
 }
 
 .logo, .icon {
@@ -18,16 +28,24 @@ header {
 nav a {
   text-align: center;
   text-decoration: none;
-  color: #4F738D;
+  color: #FFF;
+  padding: 35px;
 }
 
 nav a:hover {
   background-color: #F5DC71;
-  color: #FFFFFF;
+  color: #4F738D;
 }
 
 .home-title {
   color: #4F738D;
+  font-family: "Viga", Ariel, sans-serif;
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+h2 {
+  margin: 0;
 }
 
 h4 {
@@ -46,31 +64,56 @@ h4 {
   text-align: center;
 } 
 
+.card-img {
+  border: 10px solid #4F738D; 
+}
+
+.rivers-card, .camping-card, .rapids-card {
+  margin: 200px 0;
+}
+
+.icon {
+  padding-top: 10px;
+}
+
 main section {
   text-align: center;
 }
 
+main section img {
+  box-sizing: border-box;
+}
+
 #background {
   height: 725px;
-  background-color: #F5DC71;
+  background-color: #95D3E1;
 }
 
 .msg {
   background-color: #4F738D;
+  line-height: 1.5em;
+  padding: 35px;
 }
 
 .msg h2 {
   color: #FFFFFF;
+  font-family: "Viga", Arial, sans-serif;
 }
 
 .msg p {
   color: #FFFFFF;
+  font-size: 0.8em;
+  padding-bottom: 15px;
 }
 
 .book, .join {
   text-decoration: none;
-  background-color: #4F738D;
-  color: #FFFFFF;
+  background-color: #F5DC71;
+  color: #4F738D;
+  font-size: 18px;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
 }
 
 .book:hover, .join:hover {
@@ -79,13 +122,15 @@ main section {
 }
 
 footer {
-  background-color: #95D3E1;
-  color: #4F738D;
+  background-color: #4F738D;
+  color: #FFF;
+  padding: 25px 50px;
+  margin-top: 200px;
 }
 
 footer a {
   text-decoration: none;
-  color: #4F738D;
+  color: #FFF;
 }
 
 footer a:hover {
@@ -98,4 +143,8 @@ footer p {
 
 footer p a:hover {
   text-decoration: underline;
+}
+
+footer .social img{
+  scroll-padding-top: 15px;
 }
