@@ -47,7 +47,7 @@ nav a:hover {
 }
 
 .home-title {
-  color: #4F738D;
+  color: #F5DC71;
   font-family: "Viga", Ariel, sans-serif;
   font-size: 2em;
   margin-top: 10px;
@@ -136,6 +136,37 @@ main section {
 
 main section img {
   box-sizing: border-box;
+}
+
+.left, .left img {
+  float: left;
+  height: 300px;
+  margin: 10px;
+}
+
+.right, .right img {
+  float: right;
+  height: 300px;
+}
+
+.p1 {
+  grid-row: 1/2;
+  width: 100%;
+  height: auto;
+  margin: 10px;
+}
+
+.p2 {
+  grid-row: 2/3;
+  width: 100%;
+  height: auto;
+  margin: 10px;
+}
+
+h3 {
+  text-align: center;
+  text-decoration: underline;
+  margin: 10px;
 }
 
 #background {
