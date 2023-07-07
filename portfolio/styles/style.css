@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Cormorant+Garamond:wght@700&display=swap');
 
 #content {
-  max-width: 1920px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 body {
   background-color: #D8D9D4;
-  font-family: "Cormorant Garamond", sans-serif;
+  font-family: "Cormorant Garamond", Ariel, sans-serif;
   font-size: 22px;
-  margin: 0;
+  margin: 0 3%;
   padding: 0;
 }
 
@@ -86,8 +86,7 @@ h4 {
 
 .home-grid {
   display: grid;
-  background-color: #C29B93;
-  grid-template-columns: 450px 450px;
+  grid-template-columns: 1fr 450px;
   grid-template-rows: 1fr;
   margin-bottom: -100px;
   justify-content: space-evenly;
@@ -97,13 +96,14 @@ h4 {
 }
 
 .summary {
-  grid-column: 2/3;
+  grid-column: 1/2;
   grid-row: 1/2;
   padding: 20px;
+  background-color: #D8D9D4;
 }
 
 .image {
-  grid-column: 1/2;
+  grid-column: 2/3;
   grid-row: 1/2;
   margin: 50px auto;
   width: 90%;
@@ -165,23 +165,14 @@ footer .social img {
         margin-top: 0;
     }
     #hero-msg h4 {
-        display: none;
+        color: #252C27;
     }
     .home-title {
         font-size: 25px;
-        color: #6f7364;
-    }
-    .rivers-card, .camping-card, .rapids-card { 
-        margin: 50px auto;
-        width: 60%;
+        color: #252C27;
     }
     #background {
         display: none;
-    }
-    .mountains, .msg {
-        width: 80%;
-        display: block;
-        margin: 0 auto;
     }
     footer {
         margin-top: 25px;
