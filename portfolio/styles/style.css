@@ -118,7 +118,7 @@ h4 {
 }
 
 .summary p {
-  background-image: url("/portfolio/images/dark_floral.jpg");
+  background-image: url("../images/dark_floral.jpg");
   background-size: 250%;
   color: #D8D9D4;
   border: 5px solid #252C27;
@@ -180,7 +180,7 @@ button:hover, a:hover {
 }
 
 .summary2 div p {
-  background-image: url("portfolio/images/leaves.png");
+  background-image: url("../images/leaves.png");
   color: #D8D9D4;
   padding: 40px;
 }
@@ -194,7 +194,7 @@ button:hover, a:hover {
 /* PROJECTS Page */
 .summary3 div p {
   grid-row: 1/2;
-  background-image: url("portfolio/images/flowers.jpg");
+  background-image: url("../images/flowers.jpg");
   background-size:100%;
   color: #D8D9D4;
   padding: 40px;
