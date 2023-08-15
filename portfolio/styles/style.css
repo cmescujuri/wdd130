@@ -13,6 +13,8 @@ body {
   padding: 0;
 }
 
+/* Header/Navigation */
+
 header {
   background-color: #3A201F;
   display: grid;
@@ -47,22 +49,13 @@ nav a:hover {
   color: #252C27;
 }
 
-.home-title {
-  color: #252C27;
-  font-family: "Aboreto", Ariel, sans-serif;
-  font-size: 2em;
-  margin-top: 10px;
-}
-
-h4 {
-  color: #D8D9D4;
-}
-
+/* Hero Message/Image */
 #hero {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: 1fr;
   margin-top: -100px;
+  justify-items: center;
 }
 
 #hero-box {
@@ -81,70 +74,272 @@ h4 {
   margin-top: 150px;
 }
 
+.home-title {
+  color: #252C27;
+  font-family: "Aboreto", Ariel, sans-serif;
+  font-size: 2em;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #C29B9380;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 10px #C29B9380;
+  width: 350px;
+}
+
+h4 {
+  color: #D8D9D4;
+}
+
 #hero-msg h1, #hero-msg h4 {
   text-align: center;
 }
 
+
+/* Home Grid */
+
 .home-grid {
   display: grid;
   grid-template-columns: 1fr auto;
-  grid-template-rows: auto;
+  grid-template-rows: auto auto auto auto auto;
   grid-gap: 1em;
   margin-top: 10px;
-  align-items: center;
+  align-items: top;
+  justify-items: center;
 }
+
+
+
+/* INDEX PAGE Page */
 
 .summary {
   grid-column: 1/2;
   grid-row: 1/2;
   padding: 20px;
-  color: #D8D9D4;
-  background-color: #3A201F;
-  border: 5px solid #252C27;
 }
 
-.container {
-  position: relative;
-  width: 100%;
-  display: block;
+.summary p {
+  background-image: url("/portfolio/images/dark_floral.jpg");
+  background-size: 250%;
+  color: #D8D9D4;
+  border: 5px solid #252C27;
+  height: 100%;
+  min-width: 500px;
 }
 
 .image {
-  display: block;
-  width: 100%;
-  height: auto;
+  height: 80%;
   grid-column: 2/3;
   grid-row: 1/2;
-  max-width: 450px;
+  padding-right: 40px;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
+/* ABOUT ME Page*/
+
+hr {
+  height: 2px;
+  width: 90%;
+  background-color: #252C27;
 }
 
-.container:hover .overlay {
-  opacity: 1;
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 300px;
 }
 
-.text {
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
   color: white;
-  font-size: 20px;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+.summary2 div p {
+  background-image: url("/portfolio/images/leaves.png");
+  color: #D8D9D4;
+  padding: 40px;
+}
+
+.summary2 div h2 {
+  font-family: "Aboreto", Ariel, sans-serif;
+  text-align: center;
+  padding: 50px;
+}
+
+/* PROJECTS Page */
+.summary3 div p {
+  grid-row: 1/2;
+  background-image: url("/portfolio/images/flowers.jpg");
+  background-size:100%;
+  color: #D8D9D4;
+  padding: 40px;
+}
+
+* {box-sizing:border-box}
+
+    /* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  grid-row: 2/3;
+}
+
+    /* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  width:100%; 
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+    /* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
   position: absolute;
   top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #D8D9D4;
+  background-color: #252C2780;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
+
+    /* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+    /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #252C27;
+}
+
+    /* Caption text */
+.text2 {
+  color: #D8D9D4;
+  background-color: #3A201F99;
+  border: 3px solid #D8D9D4;
+  font-size: 22px;
+  padding: 20px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 80%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.button {
+  color: #D8D9D4;
+  background-color: #3A201F99;
+  border: 3px solid #D8D9D4;
+  font-size: 22px;
+  padding: 20px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 20%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+    /* The dots/bullets/indicators */
+.dots {
+  grid-row: 3/4;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #3A201F80;
+}
+
+    /* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Footer */
 
 footer {
   background-color: #3A201F;
@@ -154,6 +349,8 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  grid-row: 5/6;
+  width: 100%;
 }
 
 footer a {
@@ -177,6 +374,8 @@ footer .social img {
   scroll-padding-top: 15px;
 }
 
+/* Transition to Smaller Screen */
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
@@ -191,6 +390,7 @@ footer .social img {
     }
     #hero {
         margin-top: 0;
+        justify-items: center;
     }
     #hero-msg {
         margin-top: 0;
@@ -201,6 +401,7 @@ footer .social img {
     .home-title {
         font-size: 25px;
         color: #252C27;
+        width: auto;
     }
     #background {
         display: none;
@@ -208,6 +409,9 @@ footer .social img {
     .container {
         text-align: center;
         padding-top: 25px;
+    }
+    .image2 {
+        max-width: 450px;
     }
     footer {
         margin-top: 25px;
